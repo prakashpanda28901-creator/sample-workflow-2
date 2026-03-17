@@ -2,7 +2,7 @@ name: print message
 on:
     push:
         branches:
-            - 'main'
+            - 'master'
 
 jobs:
     print-message:
