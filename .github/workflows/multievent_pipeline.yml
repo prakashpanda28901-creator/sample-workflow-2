@@ -14,8 +14,8 @@ jobs:
         if: github.event_name=='push'
         runs-on: ubuntu-latest
         steps: # steps to be executed in the jobs
-            - name: "running on main/test push" # step 1
-              run: "echo running on main push"
+            - name: "running on master/test push" # step 1
+              run: "echo running on master push"
 
     on-pull-request: # job 2 name
         if: github.event_name== 'pull request'
