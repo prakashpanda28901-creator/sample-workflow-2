@@ -3,18 +3,18 @@ name: "Multievent pipeline workflows" # name of the pipeline
 on:
     push: # event- when a push is made to the repository on main branch
         branches:
-            - feature/multievent-pipeline
+            - master
             - test
     pull_request:
         branches:
-            - feature/multievent-pipeline
+            - master
 jobs:
     on-push: # job 1 name
         if: github.event_name== 'push'
         runs-on: ubuntu-latest
         steps: # steps to be executed in the jobs
-            - name: "running on feature/multievent-pipeline/test push" # step 1
-              run: echo "running on feature/multievent-pipeline/test push"
+            - name: "running on master/test push" # step 1
+              run: echo "running on master/test push"
 
     on-pull-request: # job 1 name
         if: github.event_name== 'pull_request'
