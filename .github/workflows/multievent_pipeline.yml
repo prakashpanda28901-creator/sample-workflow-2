@@ -7,7 +7,7 @@ on:
             - test
     pull_request: # whenever a pull request is made to the repository
             branches:
-                  - main
+                  - test
 
 jobs:
     on-push: # job 1 name
