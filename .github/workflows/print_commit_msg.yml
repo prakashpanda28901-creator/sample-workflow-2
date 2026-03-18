@@ -2,7 +2,7 @@ name: print commit message
 on:
     push:
         branches:
-            - 'master'
+            - 'main'
 
 jobs:
     print-message:
