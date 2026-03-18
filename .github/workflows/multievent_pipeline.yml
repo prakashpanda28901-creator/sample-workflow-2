@@ -10,12 +10,14 @@ on:
             - feature/multievent-pipeline
 jobs:
     on-push: # job 1 name
+        if: github.event_name== 'push'
         runs-on: ubuntu-latest
         steps: # steps to be executed in the jobs
             - name: "running on feature/multievent-pipeline/test push" # step 1
               run: echo "running on feature/multievent-pipeline/test push"
 
     on-pull-request: # job 1 name
+        if: github.event_name== 'pull_request'
         runs-on: ubuntu-latest
         steps: # steps to be executed in the jobs
             - name: "running on pull request" # step 1
