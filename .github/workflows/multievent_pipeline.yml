@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps: # steps to be executed in the jobs
             - name: "running on feature/multievent-pipeline/test push" # step 1
-              run: "echo running on feature/multievent-pipeline push"
+              run: "echo running on feature/multievent-pipeline/test push"
 
     on-pull-request: # job 2 name
         if: github.event_name== 'pull request'
